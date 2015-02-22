@@ -3,7 +3,6 @@
 import sys
 from mongodict import MongoDict
 from blockext import *
-from config import config
 
 class Storage:
     def __init__(self):
