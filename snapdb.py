@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-
 import sys
 from mongodict import MongoDict
 from blockext import *
+
+PORT=4345
 
 class Storage:
     def __init__(self):
@@ -50,7 +51,7 @@ class Storage:
 
 descriptor = Descriptor(
     name="SnapDB",
-    port=config["localport"],
+    port=PORT,
     blocks=get_decorated_blocks_from_class(Storage)
 )
 
